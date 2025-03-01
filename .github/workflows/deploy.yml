@@ -75,7 +75,7 @@ jobs:
           BUCKET_INFO=$(wrangler r2 bucket list | grep "buling-imgbed-r2" || echo "")
           if [ -z "$BUCKET_INFO" ]; then
             echo "Creating R2 bucket..."
-            wrangler r2 bucket create buling-imgbed-r2 --location=apac
+            wrangler r2 bucket create buling-imgbed-r2 --location=wnam
           else
             echo "R2 bucket already exists"
           fi
